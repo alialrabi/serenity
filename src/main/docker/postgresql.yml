@@ -1,0 +1,11 @@
+version: '2'
+services:
+    cucumberserenity-postgresql:
+        image: postgres:9.6.2
+        # volumes:
+        #     - ~/volumes/jhipster/cucumberserenity/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=cucumberserenity
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
